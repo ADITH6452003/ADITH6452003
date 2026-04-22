@@ -1,0 +1,32 @@
+name: Generate Blue Heat Pulse
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Base Grid
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ADITH6452003
+          outputs: dist/base.svg
+
+      - name: Apply Blue Theme
+        run: |
+          cat dist/base.svg \
+          | sed 's/#39d353/#00e5ff/g' \
+          | sed 's/#26a641/#0099cc/g' \
+          | sed 's/#006d32/#0066ff/g' \
+          | sed 's/#0e4429/#001a33/g' \
+          > dist/blue-heat.svg
+
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
