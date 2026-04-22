@@ -29,7 +29,7 @@
 ## ░▒▓ CONTRIBUTION HEAT ▓▒░
 
 <p align="center">
-  <img src="https://github.com/ADITH6452003/ADITH6452003/blob/output/fire-grid.svg"/>
+<img src="https://raw.githubusercontent.com/ADITH6452003/ADITH6452003/output/fire-grid.svg"/>
 </p>
 
 ---
