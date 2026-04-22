@@ -26,13 +26,18 @@
 
 ---
 
-## ░▒▓ CONTRIBUTION HEAT ▓▒░
+
+## ░▒▓ CONTRIBUTION FLOW ▓▒░
+
+
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/ADITH6452003/ADITH6452003/output/fire-grid.svg"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ADITH6452003&theme=highcontrast&hide_border=true&ring=FF4C00&fire=FF4C00&currStreakLabel=FF4C00"/>
 </p>
 
----
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ADITH6452003&theme=github_dark"/>
+</p>
 
 ## ░▒▓ SYSTEM STATUS ▓▒░
 
