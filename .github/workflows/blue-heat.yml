@@ -25,25 +25,21 @@ jobs:
 
       - name: Convert to Blue Heat
         run: |
-          mkdir -p dist
+          mkdir -p output_files
 
           if [ ! -f dist/snake.svg ]; then
             echo "snake.svg not generated"
             exit 1
           fi
 
-          cp dist/snake.svg dist/temp.svg
-
-          sed 's/#39d353/#00e5ff/g' dist/temp.svg \
+          sed 's/#39d353/#00e5ff/g' dist/snake.svg \
           | sed 's/#26a641/#0099cc/g' \
           | sed 's/#006d32/#0066ff/g' \
           | sed 's/#0e4429/#001a33/g' \
-          > dist/blue-heat.svg
-
-          chmod 644 dist/blue-heat.svg
+          > output_files/blue-heat.svg
 
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: output_files
