@@ -5,11 +5,17 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
       - name: Generate Base Grid
         uses: Platane/snk@v3
         with:
@@ -18,6 +24,7 @@ jobs:
 
       - name: Apply Blue Theme
         run: |
+          mkdir -p dist
           cat dist/base.svg \
           | sed 's/#39d353/#00e5ff/g' \
           | sed 's/#26a641/#0099cc/g' \
