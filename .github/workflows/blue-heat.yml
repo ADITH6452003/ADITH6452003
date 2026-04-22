@@ -13,27 +13,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Generate Base Grid
+      - name: Generate Snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: ADITH6452003
           outputs: |
-            dist/github-snake.svg
+            dist/snake.svg
 
-      - name: Apply Blue Theme
+      - name: Convert to Blue Heat
         run: |
-          cat dist/github-snake.svg \
+          if [ ! -f dist/snake.svg ]; then
+            echo "snake.svg not generated"
+            exit 1
+          fi
+
+          cat dist/snake.svg \
           | sed 's/#39d353/#00e5ff/g' \
           | sed 's/#26a641/#0099cc/g' \
           | sed 's/#006d32/#0066ff/g' \
           | sed 's/#0e4429/#001a33/g' \
           > dist/blue-heat.svg
 
-      - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v3
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
