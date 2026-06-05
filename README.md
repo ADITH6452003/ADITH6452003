@@ -10,22 +10,6 @@
   <img src="https://img.shields.io/github/stars/ADITH6452003?style=for-the-badge&color=FF4C00&labelColor=000000&label=STARS"/>
 </p>
 
----
-
-```
- ██████╗  ██████╗ ██╗  ██╗████████╗███████╗    ██╗███╗   ██╗
- ██╔══██╗██╔═══██╗██║  ██║╚══██╔══╝██╔════╝   ██╔╝████╗  ██║
- ██████╔╝██║   ██║███████║   ██║   ███████╗  ██╔╝ ██╔██╗ ██║
- ██╔══██╗██║   ██║██╔══██║   ██║   ╚════██║ ██╔╝  ██║╚██╗██║
- ██║  ██║╚██████╔╝██║  ██║   ██║   ███████║██╔╝   ██║ ╚████║
- ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝    ╚═╝  ╚═══╝
-```
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FF4C00&background=000000&center=true&vCenter=true&width=600&lines=Systems+Engineer+%F0%9F%94%A7;Cloud+%26+DevOps+Architect+%E2%98%81%EF%B8%8F;Backend+Infrastructure+Builder+%F0%9F%8F%97%EF%B8%8F;Automation+Enthusiast+%F0%9F%A4%96;Always+shipping+something+%F0%9F%9A%80"/>
-</p>
-
----
 
 ## ░▒▓ WHO AM I ▓▒░
 
